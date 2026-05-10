@@ -115,6 +115,44 @@ td.twg-name{font-weight:600;font-size:13px;color:var(--blue-dk);min-width:200px;
 .cnt-td{min-width:60px;max-width:80px;text-align:center;font-weight:600;color:var(--blue-dk)}
 .ref-td{min-width:180px;max-width:260px;font-size:11.5px;color:var(--muted);font-style:italic}
 @media(max-width:900px){.twg-wrap{margin-top:20px}}
+
+/* ─── PROJECTS SECTION STYLES ─────────────────────────────────── */
+.sb-hd.proj-hd{background:linear-gradient(135deg,#6D28D9 0%,#1E40AF 100%)}
+.proj-list-sb{padding:8px 0;overflow-y:auto}
+.proj-btn{display:flex;align-items:flex-start;justify-content:space-between;width:100%;padding:10px 20px;background:none;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:12.5px;font-weight:400;color:var(--mid);text-align:left;transition:all .15s;border-left:3px solid transparent;gap:8px}
+.proj-btn:hover{background:#F5F3FF;color:#6D28D9}
+.proj-btn.active{background:#EDE9FE;color:#6D28D9;font-weight:600;border-left-color:#6D28D9}
+.proj-btn .pdot{background:#6D28D9;margin-top:5px;flex-shrink:0}
+.proj-btn .pname{flex:1;line-height:1.35}
+.proj-btn .pcnt{background:#EDE9FE;color:#6D28D9;flex-shrink:0;margin-top:1px}
+.proj-btn.active .pcnt{background:#6D28D9;color:#fff}
+.proj-section{margin-top:36px}
+.proj-header{background:linear-gradient(135deg,#4C1D95 0%,#1E40AF 100%);border-radius:14px;padding:26px 32px;margin-bottom:24px;position:relative;overflow:hidden}
+.proj-header::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='30' cy='30' r='26' fill='none' stroke='rgba(255,255,255,0.06)' stroke-width='1'/%3E%3C/svg%3E") repeat;opacity:.6}
+.proj-header-inner{position:relative;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.proj-icon-wrap{width:52px;height:52px;background:rgba(255,255,255,.15);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
+.proj-header-text{flex:1;min-width:200px}
+.proj-eyebrow{font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:4px}
+.proj-title{font-family:'Playfair Display',serif;font-size:clamp(18px,2.2vw,26px);font-weight:900;color:#fff;line-height:1.15;margin-bottom:4px}
+.proj-sub{font-size:13px;font-weight:300;color:rgba(255,255,255,.72);line-height:1.5}
+.proj-stat-pill{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:30px;padding:8px 20px;font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:#F0D98B;white-space:nowrap;text-align:center}
+.proj-stat-pill small{display:block;font-family:'DM Sans',sans-serif;font-size:10px;font-weight:500;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.1em;margin-top:1px}
+.proj-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:18px;margin-bottom:32px}
+.proj-card{background:#fff;border-radius:14px;border:1px solid var(--border);box-shadow:0 2px 12px rgba(0,0,0,.06);overflow:hidden;transition:box-shadow .2s,transform .15s}
+.proj-card:hover{box-shadow:0 6px 20px rgba(76,29,149,.12);transform:translateY(-2px)}
+.proj-card.highlighted{border-color:#6D28D9;box-shadow:0 0 0 2px #6D28D950,0 6px 20px rgba(76,29,149,.15)}
+.pc-header{padding:16px 18px 12px;border-bottom:1px solid var(--border)}
+.pc-team-badge{display:inline-block;padding:2px 8px;background:#EDE9FE;color:#6D28D9;font-size:10.5px;font-weight:700;border-radius:20px;margin-bottom:8px}
+.pc-title{font-weight:700;font-size:14px;color:var(--blue-dk);line-height:1.4}
+.pc-body{padding:14px 18px}
+.pc-row{display:flex;gap:8px;align-items:flex-start;margin-bottom:9px;font-size:12px}
+.pc-label{font-weight:600;color:var(--muted);min-width:90px;flex-shrink:0;font-size:11px;text-transform:uppercase;letter-spacing:.06em;padding-top:1px}
+.pc-val{color:var(--mid);line-height:1.5;flex:1}
+.pc-area-tag{display:inline-block;padding:2px 8px;background:#F0F7FF;color:var(--blue);font-size:11px;font-weight:500;border-radius:20px;border:1px solid #D1E9FF;margin:1px 2px 1px 0}
+.pc-prov-tag{display:inline-block;padding:1px 7px;background:#F3F4F6;color:#374151;font-size:11px;border-radius:12px;margin:1px 2px 1px 0;border:1px solid #E5E7EB}
+.pc-reg-tag{display:inline-block;padding:1px 7px;background:#FDF4FF;color:#7C3AED;font-size:11px;border-radius:12px;margin:1px 2px 1px 0;border:1px solid #E9D5FF}
+@media(max-width:900px){.proj-cards{grid-template-columns:1fr}.proj-section{margin-top:20px}}
+/* ─────────────────────────────────────────────────────────────── */
 /* ─────────────────────────────────────────────────────────────── */
 </style>
 </head>
@@ -143,6 +181,7 @@ td.twg-name{font-weight:600;font-size:13px;color:var(--blue-dk);min-width:200px;
         <div><div class="stat-n" id="lnk-cnt">—</div><div class="stat-l">Linked Sources</div></div>
         <div><div class="stat-n" id="noh-cnt">—</div><div class="stat-l">NOH 2023-2028 Indicators</div></div>
         <div><div class="stat-n">8</div><div class="stat-l">Technical Working Groups</div></div>
+        <div><div class="stat-n">7</div><div class="stat-l">WHO-Supported Projects</div></div>
       </div>
     </div>
   </div>
@@ -157,6 +196,10 @@ td.twg-name{font-weight:600;font-size:13px;color:var(--blue-dk);min-width:200px;
     <div class="sb-panel">
       <div class="sb-hd twg-hd">🤝 Technical Working Groups</div>
       <div class="twg-list" id="twg-list"></div>
+    </div>
+    <div class="sb-panel">
+      <div class="sb-hd proj-hd">📍 WHO-Supported Projects</div>
+      <div class="proj-list-sb" id="proj-list-sb"></div>
     </div>
   </aside>
   <main>
@@ -346,6 +389,25 @@ td.twg-name{font-weight:600;font-size:13px;color:var(--blue-dk);min-width:200px;
     </div>
   </div>
 </div><!-- end twg-wrap -->
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<!-- PROJECTS SECTION                                               -->
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<div class="proj-section" id="proj-section">
+  <div class="proj-header">
+    <div class="proj-header-inner">
+      <div class="proj-icon-wrap">📍</div>
+      <div class="proj-header-text">
+        <div class="proj-eyebrow">WHO Philippines Country Office · 2026</div>
+        <div class="proj-title">Projects Supported by WHO Philippines</div>
+        <div class="proj-sub">Target provinces, regions, and health areas of ongoing WHO-supported health projects</div>
+      </div>
+      <div class="proj-stat-pill">7<small>Projects</small></div>
+    </div>
+  </div>
+  <div class="proj-cards" id="proj-cards"></div>
+</div>
+
   </main>
 </div><!-- end wrap -->
 
@@ -530,6 +592,167 @@ document.querySelectorAll(".twg-btn").forEach(b=>{
     setTimeout(()=>highlightTwgRow(activeTwgIdx), 400);
     // Deactivate programme buttons
     document.querySelectorAll(".pbtn:not(.twg-btn)").forEach(x=>x.classList.remove("active"));
+  });
+});
+
+// ── Projects ─────────────────────────────────────────────────────
+const PROJECTS = [
+  {
+    id: 0,
+    team: "HSS",
+    program: "SDH",
+    title: "Special Action on Social Determinants of Health Initiative",
+    health_areas: ["PHC", "SDH", "Equity"],
+    regions: ["Eastern Visayas"],
+    provinces: ["Leyte"],
+    municipalities: ["Tolosa"],
+    color: "#065F46"
+  },
+  {
+    id: 1,
+    team: "HSS",
+    program: "SDH",
+    title: "Urban Governance for Health and Well-being",
+    health_areas: ["PHC", "SDH", "Equity", "Urban Health"],
+    regions: ["NCR"],
+    provinces: ["Metro Manila"],
+    municipalities: ["Pasig"],
+    color: "#0E7490"
+  },
+  {
+    id: 2,
+    team: "HSS",
+    program: "Healthy Ageing",
+    title: "Healthy Ageing Program Implementation",
+    health_areas: ["PHC", "SDH", "Equity", "NCD"],
+    regions: ["NCR", "Bicol", "Cagayan Valley", "Central Visayas"],
+    provinces: ["Metro Manila (Makati)", "Sorsogon (Magallanes)", "Cagayan (Abulug, Tuguegarao)", "Cebu (Liloan, Oslob)"],
+    municipalities: ["Makati", "Magallanes", "Abulug", "Tuguegarao", "Liloan", "Oslob"],
+    color: "#B45309"
+  },
+  {
+    id: 3,
+    team: "HSS/NCD",
+    program: "CVD",
+    title: "Healthy Hearts Programme (Hypertension Control)",
+    health_areas: ["NCD", "Cardiovascular Disease"],
+    regions: ["Western Visayas", "Cagayan Valley"],
+    provinces: ["Iloilo Province", "Antique", "Aklan", "Capiz", "Guimaras", "Iloilo City", "Isabela", "Santiago City", "Quirino", "Batanes", "Cagayan", "Nueva Vizcaya"],
+    municipalities: ["46 municipalities in Iloilo", "18 in Antique", "16 in Aklan", "19 in Capiz", "5 in Guimaras", "Iloilo City", "40+ municipalities in Isabela & Cagayan", "Nueva Vizcaya & Quirino"],
+    color: "#DC2626"
+  },
+  {
+    id: 4,
+    team: "CD",
+    program: "HSI",
+    title: "ROOTS-PH: Strengthening Grassroots Systems for Sustainable HIV Responses",
+    health_areas: ["HIV", "Hepatitis", "STIs"],
+    regions: ["NCR", "Central Luzon", "CALABARZON", "Western Visayas", "Negros Island Region", "Central Visayas", "Davao Region", "SOCCSKSARGEN"],
+    provinces: ["Metro Manila (all 17 cities)", "Bulacan", "Pampanga", "Nueva Ecija", "Zambales", "Tarlac", "Rizal", "Cavite", "Laguna", "Batangas", "Quezon Province", "Aklan", "Capiz", "Iloilo", "Negros Occidental", "Negros Oriental", "Cebu", "Davao del Sur", "Davao del Norte", "South Cotabato", "North Cotabato"],
+    municipalities: ["17 cities/municipalities in NCR", "5 in Bulacan", "3 in Pampanga", "21 in CALABARZON", "4 in Western Visayas", "5 in Cebu", "2 in Davao", "2 in SOCCSKSARGEN"],
+    color: "#9D174D"
+  },
+  {
+    id: 5,
+    team: "HSS/NCD",
+    program: "CVD",
+    title: "Proteksyon Para sa Altapresyon (Scale-up of Healthy Hearts Programme)",
+    health_areas: ["NCD", "Cardiovascular Disease", "Hypertension"],
+    regions: ["Ilocos", "Central Luzon", "CALABARZON", "MIMAROPA", "Bicol", "Central Visayas", "Eastern Visayas", "Zamboanga Peninsula", "Northern Mindanao", "Davao", "SOCCSKSARGEN", "CARAGA", "CAR", "Negros Island Region", "NCR", "BARMM"],
+    provinces: ["Ilocos Sur", "Zambales", "Batangas", "Oriental Mindoro", "Albay", "Cebu Province", "Biliran", "Zamboanga Sibugay", "Bukidnon", "Davao Oriental", "South Cotabato", "Agusan del Norte", "Apayao", "Siquijor", "City of Makati", "Maguindanao del Norte", "Maguindanao del Sur"],
+    municipalities: ["36 municipalities in Ilocos Sur", "16 in Zambales", "65+ in Batangas", "19 in Oriental Mindoro", "19 in Albay", "65+ in Cebu Province", "8 in Biliran", "16 in Zamboanga Sibugay", "22 in Bukidnon", "11 in Davao Oriental", "12 in South Cotabato", "13 in Agusan del Norte", "6 in Siquijor", "18 health centers in Makati", "22 in Maguindanao del Norte", "25 in Maguindanao del Sur"],
+    color: "#1E40AF"
+  },
+  {
+    id: 6,
+    team: "HSS/RMNCAH",
+    program: "Adolescent Health",
+    title: "Joint Programme on Accelerating the Reduction of Adolescent Pregnancy",
+    health_areas: ["Adolescent Health", "RMNCAH"],
+    regions: ["Eastern Visayas"],
+    provinces: ["Samar", "Southern Leyte"],
+    municipalities: ["Calbiga", "Santa Rita", "San Jose de Buan", "Basey", "Calbayog City", "Paranas", "Catbalogan City", "Villareal", "Marabut", "San Sebastian", "Limasawa", "Maasin City", "Liloan", "Padre Burgos", "Bontoc", "Macrohon", "Libagon", "Sogod", "Tomas Oppus", "Malitbog"],
+    color: "#6D28D9"
+  }
+];
+
+const TEAM_COLORS = {
+  "HSS": "#065F46",
+  "HSS/NCD": "#1E40AF",
+  "CD": "#9D174D",
+  "HSS/RMNCAH": "#6D28D9"
+};
+
+// Build sidebar project list
+const projSb = document.getElementById("proj-list-sb");
+const allProjBtn = document.createElement("button");
+allProjBtn.className = "pbtn proj-btn active";
+allProjBtn.dataset.proj = "";
+allProjBtn.innerHTML = `<span class="pdot" style="background:#6D28D9"></span><span class="pname">All Projects</span><span class="pcnt" style="background:#EDE9FE;color:#6D28D9">${PROJECTS.length}</span>`;
+projSb.appendChild(allProjBtn);
+
+PROJECTS.forEach((p, i) => {
+  const b = document.createElement("button");
+  b.className = "pbtn proj-btn";
+  b.dataset.proj = String(i);
+  const shortTitle = p.title.length > 40 ? p.title.slice(0, 38) + "…" : p.title;
+  b.innerHTML = `<span class="pdot" style="background:${p.color}"></span><span class="pname" title="${p.title}">${shortTitle}</span>`;
+  projSb.appendChild(b);
+});
+
+// Build project cards
+function buildProjectCards(filterIdx) {
+  const container = document.getElementById("proj-cards");
+  container.innerHTML = "";
+  const list = filterIdx === null ? PROJECTS : [PROJECTS[filterIdx]];
+  list.forEach(p => {
+    const healthTags = p.health_areas.map(h => `<span class="pc-area-tag">${h}</span>`).join("");
+    const regTags = p.regions.map(r => `<span class="pc-reg-tag">${r}</span>`).join("");
+    const provTags = p.provinces.map(pr => `<span class="pc-prov-tag">${pr}</span>`).join("");
+    const muniText = p.municipalities.length > 3 ? p.municipalities.slice(0, 3).join("; ") + `; <em>+${p.municipalities.length - 3} more</em>` : p.municipalities.join("; ");
+    const teamColor = TEAM_COLORS[p.team] || "#6D28D9";
+    container.innerHTML += `
+      <div class="proj-card" id="proj-card-${p.id}">
+        <div class="pc-header">
+          <div><span class="pc-team-badge" style="background:${teamColor}18;color:${teamColor}">${p.team} · ${p.program}</span></div>
+          <div class="pc-title">${p.title}</div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-row">
+            <span class="pc-label">🎯 Focus</span>
+            <span class="pc-val">${healthTags}</span>
+          </div>
+          <div class="pc-row">
+            <span class="pc-label">🗺️ Regions</span>
+            <span class="pc-val">${regTags}</span>
+          </div>
+          <div class="pc-row">
+            <span class="pc-label">📍 Provinces</span>
+            <span class="pc-val">${provTags}</span>
+          </div>
+          <div class="pc-row">
+            <span class="pc-label">🏥 Sites</span>
+            <span class="pc-val" style="font-size:11.5px;color:var(--muted)">${muniText}</span>
+          </div>
+        </div>
+      </div>`;
+  });
+}
+
+buildProjectCards(null);
+
+let activeProj = null;
+
+document.querySelectorAll(".proj-btn").forEach(b => {
+  b.addEventListener("click", () => {
+    document.querySelectorAll(".proj-btn").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    activeProj = b.dataset.proj === "" ? null : parseInt(b.dataset.proj);
+    buildProjectCards(activeProj);
+    document.getElementById("proj-section").scrollIntoView({behavior: "smooth", block: "start"});
+    // Deactivate other sidebar panels
+    document.querySelectorAll(".pbtn:not(.proj-btn)").forEach(x => x.classList.remove("active"));
+    document.querySelectorAll(".twg-btn").forEach(x => x.classList.remove("active"));
   });
 });
 document.getElementById("search").addEventListener("input",e=>{search=e.target.value.trim().toLowerCase();render()});
